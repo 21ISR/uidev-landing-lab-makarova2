@@ -3,121 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks — Твой идеальный кофе</title>
+    <title>Starbucks Premium — Искусство кофе</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 </head>
-<body class="page">
-
+<body>
     <header class="header">
-        <div class="header__container">
-            <div class="header__logo">STARBUCKS</div>
-            <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#menu" class="nav__link">Меню</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
-                    <li class="nav__item"><a href="#gallery" class="nav__link">Кофейни</a></li>
-                </ul>
+        <div class="container flex-header">
+            <img src="img/логотип с волнами.png" alt="Starbucks" class="logo">
+            <nav class="nav">
+                <a href="#about">О кофейне</a>
+                <a href="#menu">Меню</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-btn">Написать нам</a>
             </nav>
-            <button class="header__button button button--accent">Найти кофейню</button>
         </div>
     </header>
-
-    <main class="main">
-        <!-- Hero Section по образу первого скриншота -->
-        <section class="hero">
-            <div class="hero__container">
-                <span class="hero__badge">Кофейня нового поколения</span>
-                <h1 class="hero__title">Пей кофе <br><span class="hero__title--accent">так, как чувствуешь.</span></h1>
-                <p class="hero__text">
-                    Легендарные напитки, свежая выпечка и уютная атмосфера. 
-                    Присоединяйтесь к сообществу из миллионов любителей кофе.
-                </p>
-                <div class="hero__actions">
-                    <button class="button button--main">Выбрать напиток</button>
-                    <button class="button button--outline">Смотреть меню ▶</button>
-                </div>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-image-wrap">
+                <img src="img/кофе с кувшином.png" alt="Кофе Starbucks" class="hero-img">
             </div>
-        </section>
-
-        <!-- Stats Section по образу второго скриншота -->
-        <section class="stats">
-            <div class="stats__container">
-                <div class="stats__item">
-                    <div class="stats__value">30K+</div>
-                    <div class="stats__label">Кофеен в мире</div>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__value">50+</div>
-                    <div class="stats__label">Видов напитков</div>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__value">100%</div>
-                    <div class="stats__label">Арабика</div>
-                </div>
-                <div class="stats__item">
-                    <div class="stats__value">50 лет</div>
-                    <div class="stats__label">На рынке</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Menu Section (Карточки) -->
-        <section id="menu" class="menu">
-            <div class="menu__container">
-                <h2 class="menu__title">Наше <span class="menu__title--accent">меню</span></h2>
-                <div class="menu__grid">
-                    <article class="card">
-                        <div class="card__icon">☕</div>
-                        <h3 class="card__name">Карамель Маккиато</h3>
-                        <p class="card__desc">Свежесваренный эспрессо с ванильным сиропом и карамелью.</p>
-                        <div class="card__footer">
-                            <span class="card__tag">Хит</span>
-                            <span class="card__price">350 ₽</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card__icon">🥤</div>
-                        <h3 class="card__name">Фраппуччино</h3>
-                        <p class="card__desc">Холодный кофейный напиток со льдом и нежными взбитыми сливками.</p>
-                        <div class="card__footer">
-                            <span class="card__tag">Холодный</span>
-                            <span class="card__price">380 ₽</span>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <div class="card__icon">🥐</div>
-                        <h3 class="card__name">Круассан</h3>
-                        <p class="card__desc">Классическая французская выпечка на свежем сливочном масле.</p>
-                        <div class="card__footer">
-                            <span class="card__tag">Свежее</span>
-                            <span class="card__price">190 ₽</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section (Яркий блок в конце) -->
-        <section class="cta">
-            <div class="cta__container">
-                <h2 class="cta__title">Начни свое утро уже сегодня</h2>
-                <p class="cta__text">Первый кофе при регистрации в приложении — бесплатно. Попробуй и почувствуй разницу.</p>
-                <button class="button button--white">Зарегистрироваться</button>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__logo">STARBUCKS</div>
-            <p class="footer__copy">© 2026 Starbucks. Все права защищены.</p>
-            <div class="footer__socials">
-                <a href="#" class="footer__link">ВКонтакте</a>
-                <a href="#" class="footer__link">Telegram</a>
-                <a href="#" class="footer__link">YouTube</a>
+            <div class="hero-text">
+                <span class="subtitle">Premium Experience</span>
+                <h1>Больше, чем <br><span>просто кофе</span></h1>
+                <p>Тонкий аромат свежеобжаренных зерен и легендарные рецепты в каждой порции.</p>
+                <a href="#menu" class="btn btn-primary">Посмотреть цены</a>
             </div>
         </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container grid-2">
+            <div class="about-content">
+                <h2 class="section-title">Атмосфера Starbucks</h2>
+                <p>Наша кофейня — это уютное место для встреч, работы и вдохновения. Мы создаем пространство, где каждый глоток — удовольствие.</p>
+                <div class="benefits-mini">
+                    <div class="benefit">✨ Мастерство бариста</div>
+                    <div class="benefit">🌍 Этичная обжарка</div>
+                    <div class="benefit">🍯 Фирменные сиропы</div>
+                </div>
+            </div>
+            <div class="building-frame">
+                <img src="img/здание старбакс.jpg" alt="Здание кофейни" class="img-styled">
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title text-center">Наше Меню</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="card-img"><img src="img/кофе1.png" alt="Кофе 1"></div>
+                    <h3>Ореховый Латте</h3>
+                    <p class="price">290 ₽</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img"><img src="img/кофе2.png" alt="Кофе 2"></div>
+                    <h3>Карамель Фраппе</h3>
+                    <p class="price">380 ₽</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img"><img src="img/кофе3.png" alt="Кофе 3"></div>
+                    <h3>Айс Кофе</h3>
+                    <p class="price">320 ₽</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img"><img src="img/кофе4.png" alt="Кофе 4"></div>
+                    <h3>Шоколадный Мокка</h3>
+                    <p class="price">350 ₽</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img"><img src="img/кофе5.png" alt="Кофе 5"></div>
+                    <h3>Капучино Крем</h3>
+                    <p class="price">310 ₽</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-img"><img src="img/кофе6.png" alt="Кофе 6"></div>
+                    <h3>Ягодный Микс</h3>
+                    <p class="price">340 ₽</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="faq">
+        <div class="container small-container">
+            <h2 class="section-title text-center">Вопросы</h2>
+            <details>
+                <summary>Есть ли у вас растительное молоко?</summary>
+                <p>Да, мы готовим напитки на овсяном, миндальном, кокосовом и соевом молоке.</p>
+            </details>
+            <details>
+                <summary>Как получить карту лояльности?</summary>
+                <p>Просто скажите бариста о своем желании при следующем заказе!</p>
+            </details>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container contact-wrapper">
+            <!-- Здесь используем "старбакс на фон.jpg" в CSS -->
+            <div class="contact-box">
+                <h2>Остались вопросы?</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Ваше сообщение"></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="img/логотип.png" alt="Logo" class="footer-logo">
+            <p class="copyright">© 2026 Starbucks Culture. Все права защищены.</p>
+        </div>
     </footer>
-
 </body>
 </html>
