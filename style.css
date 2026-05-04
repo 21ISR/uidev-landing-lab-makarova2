@@ -100,3 +100,8 @@ summary { font-weight: 700; color: var(--gold); }
 .footer { padding: 60px 0; border-top: 1px solid rgba(255,255,255,0.1); }
 .footer-logo { height: 45px; filter: brightness(1.5); margin-bottom: 15px; }
 .copyright { opacity: 0.5; font-size: 0.8rem; }
+.btn-primary {
+    margin-top: 20px; /* Дополнительный зазор, если нужно еще ниже */
+    background: var(--green);
+    color: white;
+}
