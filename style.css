@@ -1,0 +1,123 @@
+/* --- Rem Hack & Colors --- */
+:root {
+    --bg: #0b0b0b;
+    --bg-card: #16161c;
+    --accent: #00704a; /* Starbucks Green */
+    --accent-hover: #005a3c;
+    --text: #ffffff;
+    --text-muted: #a0a0a0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+/* Адаптивность Rem Hack */
+@media (max-width: 1024px) { html { font-size: 55%; } }
+@media (max-width: 768px) { html { font-size: 45%; } }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Components --- */
+.button {
+    padding: 1.5rem 3rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    font-size: 1.4rem;
+}
+
+.button--main { background: var(--accent); color: white; }
+.button--outline { background: transparent; border: 1px solid #333; color: white; }
+.button--accent { background: #d42d4a; color: white; } /* Розовая кнопка как на фото */
+.button--white { background: white; color: var(--accent); }
+
+/* --- Header (Fixed) --- */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(11, 11, 11, 0.95);
+    z-index: 1000;
+}
+
+.header__container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo { font-size: 2.2rem; font-weight: 900; letter-spacing: -1px; }
+
+.nav__list { display: flex; list-style: none; gap: 3rem; }
+.nav__link { color: var(--text-muted); text-decoration: none; font-size: 1.3rem; font-weight: 600; text-transform: uppercase; }
+.nav__link:hover { color: white; }
+
+/* --- Hero --- */
+.hero {
+    padding: 20rem 2rem 10rem;
+    background: radial-gradient(circle at 90% 50%, #1a1a1a 0%, var(--bg) 60%);
+}
+
+.hero__container { max-width: 120rem; margin: 0 auto; }
+.hero__badge { border: 1px solid var(--accent); color: var(--accent); padding: 0.5rem 1rem; font-size: 1.2rem; text-transform: uppercase; }
+
+.hero__title { font-size: 8rem; margin: 4rem 0; line-height: 1.1; }
+.hero__title--accent { color: var(--accent); }
+
+.hero__text { font-size: 1.8rem; color: var(--text-muted); max-width: 50rem; margin-bottom: 4rem; }
+.hero__actions { display: flex; gap: 2rem; }
+
+/* --- Stats --- */
+.stats { padding: 5rem 2rem; border-top: 1px solid #222; border-bottom: 1px solid #222; }
+.stats__container { max-width: 140rem; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; }
+.stats__value { font-size: 5rem; font-weight: 800; color: var(--accent); }
+.stats__label { color: var(--text-muted); text-transform: uppercase; font-size: 1.2rem; margin-top: 1rem; }
+
+/* --- Cards (Menu) --- */
+.menu { padding: 10rem 2rem; }
+.menu__title { font-size: 5rem; margin-bottom: 6rem; }
+.menu__title--accent { color: var(--accent); }
+
+.menu__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: #222; } /* Тонкие линии между карточками */
+
+.card { background: var(--bg-card); padding: 4rem; transition: 0.3s; }
+.card:hover { background: #1c1c24; }
+.card__icon { font-size: 3rem; margin-bottom: 2rem; }
+.card__name { font-size: 2.4rem; margin-bottom: 2rem; }
+.card__desc { color: var(--text-muted); font-size: 1.4rem; margin-bottom: 3rem; min-height: 4.5rem; }
+.card__footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #333; padding-top: 2rem; }
+.card__price { color: #f2e205; font-size: 1.8rem; font-weight: 700; }
+
+/* --- CTA (Яркий блок) --- */
+.cta { padding: 8rem 2rem; }
+.cta__container { background: var(--accent); border-radius: 1rem; padding: 8rem; text-align: center; }
+.cta__title { font-size: 6rem; margin-bottom: 2rem; }
+.cta__text { font-size: 2rem; margin-bottom: 4rem; opacity: 0.9; }
+
+/* --- Footer --- */
+.footer { padding: 5rem 2rem; border-top: 1px solid #222; }
+.footer__container { max-width: 140rem; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.footer__copy { color: var(--text-muted); font-size: 1.4rem; }
+.footer__socials { display: flex; gap: 2rem; }
+.footer__link { color: var(--text-muted); text-decoration: none; font-size: 1.4rem; }
+
+/* --- Mobile Fixes --- */
+@media (max-width: 768px) {
+    .stats__container, .menu__grid { grid-template-columns: 1fr; }
+    .hero__title { font-size: 5rem; }
+    .cta__container { padding: 4rem 2rem; }
+}
