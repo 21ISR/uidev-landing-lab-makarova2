@@ -34,7 +34,7 @@ body {
 
 /* Header */
 .header {
-    padding: 40px 0;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -50,7 +50,7 @@ body {
 }
 
 .logo {
-    height: 26px;
+    height: 40px;
 }
 
 .nav a {
